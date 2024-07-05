@@ -31,7 +31,7 @@ By order of importance:
 
 ## Following the next-intl documentation
 
-1. `branch: minimum-setup-path-based` I followed the [App Router setup with i18n](https://next-intl-docs.vercel.app/docs/getting-started/app-router/with-i18n-routing) routing guide. By following it I could create a path based localized website.
+1. I followed the [App Router setup with i18n](https://next-intl-docs.vercel.app/docs/getting-started/app-router/with-i18n-routing) routing guide. By following it I could create a path based localized website.
 2. After that I used the search to find the [Domain-based routing section](https://next-intl-docs.vercel.app/docs/routing/middleware#location-detection-domain).
 
 - "To retrieve the domain, the host is read from the x-forwarded-host header, with a fallback to host.": I have no idea what this thing means and if it has any impact at all on the way I will implement the domain-based website.
@@ -41,7 +41,7 @@ By order of importance:
 - It says to add a list of mappings to the domains settings, but it is not clear where I should put it.
 - The file says `config.ts` but I guess I shouldn't create a new configuration file.
 
-4. `branch: domain-based-setup` I searched for `config.ts` and found the [Shared configuration](https://next-intl-docs.vercel.app/docs/routing#shared-configuration) section.
+4. I searched for `config.ts` and found the [Shared configuration](https://next-intl-docs.vercel.app/docs/routing#shared-configuration) section.
 
 - I created the `config.ts` file and linked it to the `middleware.ts`.
 - I added the domain based code from the [Domains sections](https://next-intl-docs.vercel.app/docs/routing#domains).
