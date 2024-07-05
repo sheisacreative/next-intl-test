@@ -47,6 +47,8 @@ By order of importance:
 - I added the domain based code from the [Domains sections](https://next-intl-docs.vercel.app/docs/routing#domains).
 - I got a typescript problem I didn't know how to solve as next-intl says it has typescript integration out of the box. The error: "Cannot find name 'DomainsConfig'".
 
+5. After that I froze. :P
+
 ## Next-intl documentation issues I faced
 
 - The current localization shows a straightforward way to implement with path based but almost no guided on how to achieve the same with a domain based website.
@@ -55,6 +57,7 @@ By order of importance:
 ## I need to solve
 
 - How can I setup a NextJs project to work domain-base?
+- What happens after I made all the configurations I could find on the documentation?
 - How can I test locally if I use a domain-based approach?
 - How does Vercel tells Google which page they should prioritize in terms of SEO? Or how can I set that?
 - How to correctly redirect the user based on a button click?
@@ -62,3 +65,10 @@ By order of importance:
 ## Other comments
 
 - Almost all next js localization tutorials are path based and not domain based.
+
+# How I will probably work around it
+
+- I will probably try to implement localization by myself as next-intl doesn't support markdown and separate files and those are really important for me.
+- Even when implementing by myself I will probably go with path based, because:
+  1. I don't know how to test locally otherwise;
+  2. I don't like that Vercel duplicates all the paths on both domains, which may hurt SEO.
